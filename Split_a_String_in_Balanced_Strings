@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char s[100];
+    int i,c=0,r=0,l=0,j=0;
+    scanf("%s",s);
+    for(i=0;i<strlen(s);i++){
+        if(s[i]=='R')
+        r=r+1;
+        if(s[i]=='L')
+        l=l+1; 
+        if(l==r)
+        c=c+1;
+    }
+    printf("%d",c);
+}
